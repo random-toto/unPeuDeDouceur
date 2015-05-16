@@ -114,7 +114,7 @@ upper = \relative c'' {
     <ees' ees'>4.~\mf <ees ees'>4 <aes aes'>8 <bes bes'>4.~ <bes bes'>8 <aes aes'> <bes bes'> | 
     <c c'>4.~ <c c'>4 <ees ees'>8 <d d'>4.~ <d d'>8 <c c'> <bes bes'> 
     <<
-        \voiceOne{\grace{ <g' c,>4 } c4.~ c4 <bes, bes'>8 <c c'>4.~ <c c>4 <bes bes'>8} \\
+        \voiceOne{\grace{ <g' c,>4 } c4.~ c4 <bes, bes'>8 <c c'>4.~ <c c'>4 <bes bes'>8} \\
         \voiceTwo{r8 <e g> <e g> <e g> <e g> <e g> r <e g> <e g> <e g> <e g> <e g> }
     >> |
     <<
@@ -225,11 +225,11 @@ lower = \relative c {
     <<
         \voiceOne{r1.r \override TextSpanner.bound-details.left.text = \markup { \upright "rit." } r\startTextSpan r \stopTextSpan r r r r4 r8 <c, f a c>4.~ <c f a c>2\fermata} \\
         \voiceTwo{ 
-            \tuplet 2/3 {r8 f,, } \tuplet 2/3 {<c' f> <e g>} \tuplet 2/3 { <f a> <g c>} \tuplet 2/3 { <a e'> <c f>} \clef "treble" |
+            \tuplet 2/3 {r8 f, } \tuplet 2/3 {<c' f> <e g>} \tuplet 2/3 { <f a> <g c>} \tuplet 2/3 { <a e'> <c f>} \clef "treble" |
             \tuplet 2/3 {f c } \tuplet 2/3 {f <a ees'>} \tuplet 2/3 {<c f> <ees g>} \tuplet 2/3 {<g c> g} |
             a1. \clef "bass" | 
-            <bes,, f' bes>2. <des, aes'> |
-            \key f \major <f f'>1.~ | 
+            <bes,,, f' bes>2. <des, aes'> |
+            \key f \major <f, f'>1.~ | 
             <f f'>4. <f f'>4.~ <f f'>2.~ |
             <f f'>4. <f f'>4.~ <f f'>2.~ |
             <f f'>4. <f f'>4.~ <f f'>2.\fermata 
