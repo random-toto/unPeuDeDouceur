@@ -8,6 +8,7 @@
     meter = "Agitato"
     instrument = "Piano"
     arranger = ""
+    copyright = "                    GPLv3                    "
 }
 
 global = {
@@ -41,24 +42,43 @@ upper = \relative c'' {
     ees'4.~ ees4 aes8 bes4.~ bes8 aes bes |
     c4.~ c4 ees8 d4.~ d8 c bes 
     
-     <<
-       \voiceOne{c4.~ c4 bes8 c4.~ c4 bes8} \\
-       \voiceTwo{r8 <c, e g>8 <c e g>8  <c e g>8 <c e g>8  <c e g>8 r8 <c e g>8 <c e g>8 <c e g>8 <c e g>8 <c e g>8 }
      
+     <<
+         \voiceOne{c4.~ c4 bes8 c4.~ c4 bes8} \\
+         \voiceTwo{r8  <c, e g>8 <c e g>8  <c e g>8 <c e g>8  <c e g>8 r8 <c e g>8 <c e g>8 <c e g>8 <c e g>8 <c e g>8 }
+         \addlyrics { "Croyez-en ma vieille expérience..." }
      >>
      <<
          \voiceOne{c'4.~ c4 bes8 c2.} \\
          \voiceTwo{r8 <c, f aes>8 <c f aes> <c f aes> <c f aes> <c f aes> <c e g> <c e g> <c e g> <c e g> <c e g> <c e g> }
+         \addlyrics { "ils n'iront pas loin... Ici,"  } 
      >>
-    <c c'>4.~ <c c'>4 <f f'>8 <g g'>4.~ <g g'>8 <f f'> <g g'> |
-    <aes aes'>4.~ <aes aes'>4 <c c'>8 <bes bes'>4.~ <bes bes'>8 <f f'> <g g'> |
-    <aes aes'>4.~ <aes aes'>8 <g g'> <f f'> <g g'>4.~ <g g'>4 <ees ees'>8 |
+    <<
+        \voiceOne{<c c'>4.~ <c c'>4 <f f'>8 <g g'>4.~ <g g'>8 <f f'> <g g'> }
+        \addlyrics {"... tout est fermé à clef. Et d'ailleurs," } 
+    >> |
+    <<
+        \voiceOne{<aes aes'>4.~ <aes aes'>4 <c c'>8 <bes bes'>4.~ <bes bes'>8 <f f'> <g g'> }
+        \addlyrics { "il n'y a pas de porte. C'est une petite"  }
+    >> |
+    <<
+        \voiceOne{<aes aes'>4.~ <aes aes'>8 <g g'> <f f'> <g g'>4.~ <g g'>4 <ees ees'>8 }
+        \addlyrics { "escapade... sans importance !" }
+    >> |
     <<
         \voiceOne{<f f'>1.} \\
         \voiceTwo{r4 r8 r4 r8 <f, aes c> <f aes c> <f aes c> <f aes c> r8 r}
+        \addlyrics{ "Vous les verrez bientôt revenir" }
+        %\addlyrics{ "" }
     >> |
-    <ees' ees'>4.~ <ees ees'>4 <aes aes'>8 <bes bes'>4.~ <bes bes'>8 <aes aes'> <bes bes'> |
-    <c c'>4.~ <c c'>4 <ees ees'>8 <d d'>4.~ <d d'>8 <c c'> <bes bes'> |
+    <<
+        \voiceOne{<ees' ees'>4.~ <ees ees'>4 <aes aes'>8 <bes bes'>4.~ <bes bes'>8 <aes aes'> <bes bes'> }
+        \addlyrics{ "plus vite qu'ils ne sont partis." }
+    >> |
+    <<
+        \voiceOne{<c c'>4.~ <c c'>4 <ees ees'>8 <d d'>4.~ <d d'>8 <c c'> <bes bes'>}
+        \addlyrics{ "         *Ah HA HA HA HA HA*" }
+    >> | 
     <<
         \voiceOne{\grace{ <g' c,>4 } c4.~ c4 <bes, bes'>8 <c c'>4.~ <c c'>4 <bes bes'>8} \\
         \voiceTwo{r8 <e g> <e g> <e g> <e g> <e g> r <e g> <e g> <e g> <e g> <e g> }
@@ -66,10 +86,20 @@ upper = \relative c'' {
     <<
         \voiceOne{<c c'>4.~ <c c'>4 <bes bes'>8 <c c'>4.~ <c c'>4 <c c'>8} \\
         \voiceTwo{r8 <f aes> <f aes> <f aes> <f aes> <f aes> <e g> <e g> <e g> <e g> <e g> <e g> }
+        \addlyrics{ "" "" "       *BAM*    [eau qui coule]" }
     >>
-    f,4.\mp c'8 des ees ees c des~ des des bes |
-    ees,4. bes'8 c des des bes c~ c c aes |
-    des,4. f8 c' aes bes aes g g e f |
+    <<
+        \voiceOne{f,4.\mp c'8 des ees ees c des~ des des bes}
+        \addlyrics{ "" "" "" "                   Chut! Chut! Chut!" }
+    >> | 
+    <<
+        \voiceOne{ees,4. bes'8 c des des bes c~ c c aes}
+        \addlyrics{"" "" "" "" "" "Chut! Chut!"}
+    >> | 
+    <<
+        \voiceOne{des,4. f8 c' aes bes aes g g e f}
+        \addlyrics{"Chut!" "" "" ""}
+    >> |
     <<
         \voiceOne{g4. bes8 aes f g2.} \\
         \voiceTwo{r4 r8 r4 r8 r e,8 f g aes bes}
@@ -91,10 +121,23 @@ upper = \relative c'' {
         \voiceOne{<c c'>4.~ <c c'>4 <bes bes'>8 <c c'>4.~ <c c'>4 <c'>8} \\
         \voiceTwo{r8 <f, aes> <f aes> <f aes> <f aes> <f aes> <e g> <e g> <e g> <e g> <e g> <e g> }
     >> |
-    <g c>\> <f a> <ees g> <c f> <ees g> <f a> <g c> <f a> <ees g> <c f> <ees g> <f a> \! |
-    <g c>\p <f a> <ees g> <c f> <ees g> <f a> <g c> <f a> <ees g> <c f> <ees g> <f a> |
-    <g c>1.\pp |
-    \tempo "Adagio" <d,, f aes c>2.\p <f, aes ces ees f> |
+    <<
+        \voiceOne{ <g c> <f a>\> <ees g> <c f> <ees g> <f a> <g c> <f a> <ees g> <c f> <ees g> <f a> \! }
+        \addlyrics { " Où sont ils ? "  " " " " "   " " Si j'en crois" } 
+    >> | 
+    <<
+        \voiceOne{ <g c>\p <f a> <ees g> <c f> <ees g> <f a> <g c> <f a> <ees g> <c f> <ees g> <f a> }
+        \addlyrics {" ma vieille expérience, ... " ""} 
+    >> | 
+    <<
+        \voiceOne{ <g c>1.\pp }
+        %\addlyrics{"Je crois bien "} 
+    >> | 
+    \tempo "Adagio" % \time 12/8
+    <<
+        \voiceOne{ <d,, f aes c>2.\p  <f, aes ces ees f>}
+        \addlyrics{"Je crois bien qu'ils sont partis."}
+    >> |
     \key f \major
     <<
         \voiceOne{ \tempo "a tempo" r2. <c'' c'>4.~ <c c'>4 <f f'>8 | 
@@ -180,13 +223,13 @@ lower = \relative c {
         \voiceTwo{aes2. g\clef "bass"}
     >>
     <<
-        \voiceOne{r1.r \override TextSpanner.bound-details.left.text = \markup { \upright "rit." } r\startTextSpan r \stopTextSpan r r r r4 r8 <c f a c>4.~ <c f a c>2\fermata} \\
+        \voiceOne{r1.r \override TextSpanner.bound-details.left.text = \markup { \upright "rit." } r\startTextSpan r \stopTextSpan r r r r4 r8 <c, f a c>4.~ <c f a c>2\fermata} \\
         \voiceTwo{ 
             \tuplet 2/3 {r8 f,, } \tuplet 2/3 {<c' f> <e g>} \tuplet 2/3 { <f a> <g c>} \tuplet 2/3 { <a e'> <c f>} \clef "treble" |
             \tuplet 2/3 {f c } \tuplet 2/3 {f <a ees'>} \tuplet 2/3 {<c f> <ees g>} \tuplet 2/3 {<g c> g} |
             a1. \clef "bass" | 
-            <bes,,, f' bes>2. <des, aes'> |
-            \key f \major <f, f'>1.~ | 
+            <bes,, f' bes>2. <des, aes'> |
+            \key f \major <f f'>1.~ | 
             <f f'>4. <f f'>4.~ <f f'>2.~ |
             <f f'>4. <f f'>4.~ <f f'>2.~ |
             <f f'>4. <f f'>4.~ <f f'>2.\fermata 
