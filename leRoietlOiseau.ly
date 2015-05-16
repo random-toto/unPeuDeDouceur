@@ -143,9 +143,10 @@ upper = \relative c'' {
         \voiceOne{ \tempo "a tempo" r2. <c'' c'>4.~ <c c'>4 <f f'>8 | 
                   <g g'>4.~ <g g'>8 <f f'> <g g'> <a a'>4.~ <a a'>4 <c c'>8 |
                   <b b'>4.~ <b b'>8 <f f'> <g g'> <a a'>4.~ <a a'>8 <g g'> <f f'> | 
-                  <g ees' g>4.~ \override TextSpanner.bound-details.left.text = \markup { \upright "rit." } <g ees' g>4\startTextSpan <ees c' ees>8\stopTextSpan <f a c f>2.\fermata
+                  <g ees' g>4.~ \override TextSpanner.bound-details.left.text = \markup { \upright "rit." } <g ees' g>4\startTextSpan <ees c' ees>8\pp\stopTextSpan <f a c f>2.\fermata
         } \\
         \voiceTwo{<c,, a' c>1.~\pp <c a' c>4. <c a' c>~ <c a' c>2.~ <c a' c>4. <c a' c>~ <c a' c>2.~ <c a' c> <c' f a c>\fermata}
+        \addlyrics{"" | ""  | "Wow ! Jamais je n'aurais cru que ça puisse être aussi beau !"}
     >> \bar "|."
 }
 
