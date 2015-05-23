@@ -90,15 +90,15 @@ upper = \relative c'' {
     >>
     <<
         \voiceOne{f,4.\mp c'8 des ees ees c des~ des des bes}
-        \addlyrics{ "" "" "" "                   Chut! Chut! Chut!" }
+        \addlyrics{ "" "" "" "                   Chut ! Chut ! Chut !" }
     >> | 
     <<
         \voiceOne{ees,4. bes'8 c des des bes c~ c c aes}
-        \addlyrics{"" "" "" "" "" "Chut! Chut!"}
+        \addlyrics{"" "" "" "" "" "Chut ! Chut !"}
     >> | 
     <<
         \voiceOne{des,4. f8 c' aes bes aes g g e f}
-        \addlyrics{"Chut!" "" "" ""}
+        \addlyrics{"Chut !" "" "" ""}
     >> |
     <<
         \voiceOne{g4. bes8 aes f g2.} \\
